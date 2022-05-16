@@ -51,14 +51,6 @@
   align-items: center;
   flex-direction: column;
 
-  .cyan {
-    color: var(--cyan-color);
-  }
-
-  .red {
-    color: var(--red-color);
-  }
-
   @media screen and (max-width: 1200px) {
     justify-content: flex-start;
     align-items: flex-start;
@@ -86,21 +78,12 @@
     left: -5%;
   }
 
-  @keyframes cld {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(100%);
-    }
-  }
-
   // links alt height/width
 
   div:nth-child(1) {
     width: 125px;
     height: 125px;
-    background: url('../../assets/paint-cyan.png');
+    background: url('../../assets/paint_cyan.png');
     background-size: contain;
     transform: rotate(-30deg);
   }
@@ -112,14 +95,14 @@
     margin: 1.75rem;
     width: 175px;
     height: 175px;
-    background: url('../../assets/paint-yellow.png');
+    background: url('../../assets/paint_yellow.png');
     background-size: cover;
   }
 
   div:nth-child(3) {
     width: 100px;
     height: 100px;
-    background: url('../../assets/paint-red.png');
+    background: url('../../assets/paint_red.png');
     background-size: cover;
     transform: rotate(30deg);
   }
