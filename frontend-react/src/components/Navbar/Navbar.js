@@ -14,21 +14,13 @@ const Navbar = () => {
           CHRIS<span>.</span>
         </h2>
       </div>
-      <ul className='app-navbar-links'>
-        {['home', 'about', 'projects', 'skills', 'contact'].map((item) => (
-          <li className='app-flex p-text' key={`link-${item}`}>
-            <div />
-            <a href={`#${item}`}>{item}</a>
-          </li>
-        ))}
-      </ul>
 
       <div className='app-navbar-menu'>
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
         {toggle && (
           <motion.div
-            whileInView={{ x: [300, 0] }}
+            whileInView={{ x: [300, 5] }}
             transition={{ duration: 0.85, ease: 'easeOut' }}
           >
             <HiX onClick={() => setToggle(false)} />
