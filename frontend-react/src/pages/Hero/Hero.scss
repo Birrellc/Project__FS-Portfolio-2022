@@ -109,11 +109,12 @@
     width: 100px;
     height: 100px;
     color: white;
+  }
 
-    img {
-      width: 60%;
-      height: 60%;
-    }
+  p {
+    position: relative;
+    top: -10%;
+    left: -5%;
   }
 
   @keyframes cld {
@@ -128,19 +129,30 @@
   // links alt height/width
 
   div:nth-child(1) {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
+    background: url('../../assets/paint-cyan.png');
+    background-size: contain;
+    transform: rotate(-20deg);
   }
 
   div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 1.75rem;
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
+    background: url('../../assets/paint-yellow.png');
+    background-size: cover;
   }
 
   div:nth-child(3) {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
+    background: url('../../assets/paint-red.png');
+    background-size: cover;
+    transform: rotate(20deg);
   }
 
   @media screen and (min-width: 2000px) {
