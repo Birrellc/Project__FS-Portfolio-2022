@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
 import { images } from '../../exports';
 import './Hero.scss';
 
@@ -54,13 +53,13 @@ const Hero = () => {
         className='app-hero-paint'
       >
         <div className='app-flex'>
-          <p>CONTACT</p>
+          <p className='shadow'>CONTACT</p>
         </div>
         <div className='app-flex'>
-          <p>PROJECTS</p>
+          <p className='shadow big-text'>PROJECTS</p>
         </div>
         <div className='app-flex'>
-          <p>SKILLS</p>
+          <p className='shadow'>SKILLS</p>
         </div>
       </motion.div>
     </div>
