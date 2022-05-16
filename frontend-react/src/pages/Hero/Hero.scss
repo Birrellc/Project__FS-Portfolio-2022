@@ -1,21 +1,12 @@
 #home {
   position: relative;
-  background-color: #010101;
+  background-color: var(--black-color);
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
-
-  // disable the default padding styles
-  .app-wrapper {
-    padding: 0;
-
-    .copyright {
-      display: none;
-    }
-  }
 }
 
-.app-header {
+.app-hero {
   flex: 1;
   width: 100%;
   height: 100%;
@@ -36,7 +27,7 @@
   }
 }
 
-.app-header-info {
+.app-hero-info {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -52,7 +43,7 @@
   }
 }
 
-.app-header-badge {
+.app-hero-text {
   height: 100%;
   width: 100%;
   display: flex;
@@ -60,34 +51,12 @@
   align-items: center;
   flex-direction: column;
 
-  .badge-cmp,
-  .tag-cmp {
-    padding: 1rem 2rem;
-    background: var(--white-color);
-    border-radius: 15px;
-    flex-direction: row;
-    width: auto;
-
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .tag-cmp {
-    flex-direction: column;
-    margin-top: 3rem;
-
-    p {
-      width: 100%;
-      text-transform: uppercase;
-      text-align: right;
-    }
-  }
-
   .cyan {
-    color: var(--secondary-color);
+    color: var(--cyan-color);
   }
 
   .red {
-    color: #ff003c;
+    color: var(--red-color);
   }
 
   @media screen and (max-width: 1200px) {
@@ -96,7 +65,7 @@
   }
 }
 
-.app-header-circles {
+.app-hero-paint {
   flex: 0.75;
   display: flex;
   flex-direction: column;
@@ -184,10 +153,9 @@
   }
 }
 
-.app-header-img {
+.app-hero-img {
   flex: 1;
   height: 100%;
-
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
