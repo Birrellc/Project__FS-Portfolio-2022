@@ -9,7 +9,8 @@ const scaleVariants = {
     scale: [0, 1],
     opacity: [0, 1],
     transition: {
-      duration: 3,
+      delay: 2,
+      duration: 2,
       ease: 'easeInOut',
     },
   },
@@ -20,7 +21,7 @@ const Hero = () => {
     <div className='app-hero app-flex'>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{ duration: 0.5 }}
+        transition={{ delay: 2, duration: 0.5 }}
         className='app-hero-info'
       >
         <div className='app-hero-text'>
@@ -41,7 +42,7 @@ const Hero = () => {
 
       <motion.div
         whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 2.5, delayChildren: 0.5 }}
+        transition={{ duration: 3 }}
         className='app-hero-img'
       >
         <img src={images.hero} alt='profile_bg' />
@@ -61,7 +62,6 @@ const Hero = () => {
         <div className='app-flex'>
           <p>SKILLS</p>
         </div>
-        w
       </motion.div>
     </div>
   );

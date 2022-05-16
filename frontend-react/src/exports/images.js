@@ -10,6 +10,9 @@ import react from '../assets/react.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import hero from '../assets/hero.png';
+import paint_yellow from '../assets/paint_yellow.png';
+import paint_red from '../assets/paint_red.png';
+import paint_cyan from '../assets/paint_cyan.png';
 
 export default {
   mobile,
@@ -24,4 +27,7 @@ export default {
   redux,
   sass,
   hero,
+  paint_yellow,
+  paint_red,
+  paint_cyan,
 };
