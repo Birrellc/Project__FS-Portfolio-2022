@@ -49,13 +49,13 @@ const Hero = () => {
         className='app-header-circles'
       >
         <div className='app-flex'>
-          <p>WORK</p>
+          <p>CONTACT</p>
+        </div>
+        <div className='app-flex'>
+          <p>PROJECTS</p>
         </div>
         <div className='app-flex'>
           <p>SKILLS</p>
-        </div>
-        <div className='app-flex'>
-          <p>CONTACT</p>
         </div>
         w
       </motion.div>
