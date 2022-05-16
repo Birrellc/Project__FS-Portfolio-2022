@@ -76,6 +76,13 @@
     position: relative;
     top: -10%;
     left: -5%;
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  p:hover {
+    color: white;
   }
 
   // links alt height/width
@@ -84,7 +91,7 @@
     width: 125px;
     height: 125px;
     background: url('../../assets/paint_cyan.png');
-    background-size: contain;
+    background-size: cover;
     transform: rotate(-30deg);
   }
 
