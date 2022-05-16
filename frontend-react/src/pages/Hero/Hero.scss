@@ -82,12 +82,12 @@
     }
   }
 
-  span {
-    font-size: 2.5rem;
+  .cyan {
+    color: var(--secondary-color);
+  }
 
-    @media screen and (min-width: 2000px) {
-      font-size: 5rem;
-    }
+  .red {
+    color: #ff003c;
   }
 
   @media screen and (max-width: 1200px) {
@@ -133,7 +133,7 @@
     height: 125px;
     background: url('../../assets/paint-cyan.png');
     background-size: contain;
-    transform: rotate(-20deg);
+    transform: rotate(-30deg);
   }
 
   div:nth-child(2) {
@@ -152,7 +152,7 @@
     height: 100px;
     background: url('../../assets/paint-red.png');
     background-size: cover;
-    transform: rotate(20deg);
+    transform: rotate(30deg);
   }
 
   @media screen and (min-width: 2000px) {

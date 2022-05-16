@@ -27,7 +27,11 @@ const Hero = () => {
           <div className='app-flex'>
             <div>
               <p className='p-text'>Chris</p>
-              <h1 className='head-text'>FRONTEND DEVELOPER</h1>
+              <h1 className='head-text'>
+                <span className='cyan'>F</span>RONTEN
+                <span className='red'>D</span> <span>D</span>EVELOPE
+                <span className='red'>R</span>
+              </h1>
               <p className='p-text'>Web Developer</p>
               <p className='p-text'>Junior</p>
             </div>
