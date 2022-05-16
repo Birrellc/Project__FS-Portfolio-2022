@@ -3,8 +3,9 @@
 :root {
     --font-base: "Poppins", sans-serif;
 
-    --primary-color: #edf2f8;
-    --secondary-color: #00FFFF;
+    --red-color: #ff003c;
+    --yellow-color: #F3E600;
+    --cyan-color: #00FFFF;
     --black-color: #010101;
     --lightGray-color: #e5e5e5;
     --gray-color: #6b7688;
