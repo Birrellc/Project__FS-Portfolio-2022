@@ -9,8 +9,9 @@ const scaleVariants = {
     opacity: [0, 1],
     transition: {
       delay: 2,
-      duration: 2,
+      duration: 3,
       ease: 'easeInOut',
+      delayChildren: 0.5,
     },
   },
 };
@@ -41,7 +42,7 @@ const Hero = () => {
 
       <motion.div
         whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 4, ease: 'easeIn' }}
         className='app-hero-img'
       >
         <img src={images.hero} alt='profile_bg' />

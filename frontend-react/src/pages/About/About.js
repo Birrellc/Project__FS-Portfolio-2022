@@ -7,7 +7,7 @@ import { images } from '../../exports';
 
 const About = () => {
   return (
-    <div className='app-container'>
+    <div className='app-container about-section'>
       <RoughNotation type='underline' show={true}>
         <h2 className='head-text'>
           About <span className='cyan'>Me</span> <br />
