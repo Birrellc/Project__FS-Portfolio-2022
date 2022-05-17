@@ -1,4 +1,3 @@
-import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
 import css from '../assets/css.png';
 import figma from '../assets/figma.png';
@@ -13,9 +12,9 @@ import hero from '../assets/hero.png';
 import paint_yellow from '../assets/paint_yellow.png';
 import paint_red from '../assets/paint_red.png';
 import paint_cyan from '../assets/paint_cyan.png';
+import email from '../assets/email.png';
 
 export default {
-  mobile,
   api,
   css,
   figma,
@@ -30,4 +29,5 @@ export default {
   paint_yellow,
   paint_red,
   paint_cyan,
+  email,
 };
