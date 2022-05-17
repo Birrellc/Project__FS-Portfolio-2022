@@ -7,7 +7,7 @@ import './Projects.scss';
 
 const Projects = () => {
   const [Projects, setProjects] = useState([]);
-  const [filterproject, setFilterproject] = useState([]);
+  const [filterProjects, setFilterProjects] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
@@ -38,7 +38,7 @@ const Projects = () => {
   };
 
   return (
-    <div className='app-container'>
+    <div className='app-container projects-section'>
       <h2 className='head-text'>
         My <span>Portfolio</span>
       </h2>
@@ -62,7 +62,7 @@ const Projects = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className='app-project-portfolio'
       >
-        {filterproject.map((project, i) => (
+        {filterProjects.map((project, i) => (
           <div className='app-project-item app-flex' key={i}>
             <div className='app-project-img app-flex'>
               <img src={urlFor(project.imgUrl)} alt={project.name} />
