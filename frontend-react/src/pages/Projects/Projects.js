@@ -38,7 +38,7 @@ const Projects = () => {
   };
 
   return (
-    <div className='app-container projects-section'>
+    <div className='app-container app-flex projects-section'>
       <h2 className='head-text'>
         My <span>Portfolio</span>
       </h2>
@@ -112,6 +112,9 @@ const Projects = () => {
           </div>
         ))}
       </motion.div>
+      <div className='div'>
+        <button>GithuB</button>
+      </div>
     </div>
   );
 };
