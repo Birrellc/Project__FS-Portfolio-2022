@@ -18,7 +18,7 @@ const About = () => {
   //   }
   // };
 
-  const isDesktop = useMediaQuery({ query: `(max-width: 1200px)` });
+  const isDesktop = useMediaQuery({ query: `(min-width: 1200px)` });
 
   // create an event listener
   // useEffect(() => {
