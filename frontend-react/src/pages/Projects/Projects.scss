@@ -159,3 +159,27 @@
   // background: url(../../assets/bg2.png);
   background-color: var(--yellow-color);
 }
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--black-color);
+
+  font-weight: 700;
+  color: var(--black-color);
+  outline: none;
+  margin: 2rem 0 0 0;
+  font-family: var(--font-base);
+
+  transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--yellow-color);
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
