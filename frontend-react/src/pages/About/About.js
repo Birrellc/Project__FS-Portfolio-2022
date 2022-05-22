@@ -8,26 +8,67 @@ import { images } from '../../exports';
 const About = () => {
   return (
     <div className='app-container about-section'>
-      <RoughNotation type='underline' show={true}>
-        <h2 className='head-text'>
-          About <span className='cyan'>Me</span> <br />
-        </h2>
+      <RoughNotation type='highlight' show={true} color='white' padding={15}>
+        <RoughNotation type='underline' color={'white'} show={true}>
+          <h2 className='head-text black'>
+            About <span className='red'>Me</span> <br />
+          </h2>
+        </RoughNotation>
       </RoughNotation>
       <br />
 
       <p className='about-text'>
-        <RoughNotation type='highlight' show={true} color='red'>
-          Junior Developer
-        </RoughNotation>{' '}
-        based in England. I have a strong interest in the front-end of web
-        development, animation and effects.
+        <span className='black'>
+          <RoughNotation
+            type='highlight'
+            show={true}
+            padding={15}
+            color='#F3E600'
+          >
+            Junior Developer
+          </RoughNotation>
+        </span>{' '}
+        based in England. I have a strong interest in the{' '}
+        <span className='white'>
+          <RoughNotation
+            type='highlight'
+            show={true}
+            padding={15}
+            color='#ff003c'
+          >
+            {' '}
+            front-end of web development
+          </RoughNotation>
+        </span>
+        , animation and effects.
         <br />
         <br />
-        Recent graduate of the Full Stack Software Development Diploma with the
-        Code Institute (Accredited by Edinburgh Napier University)
+        Recent graduate of the{' '}
+        <span className='black'>
+          <RoughNotation
+            type='highlight'
+            show={true}
+            padding={15}
+            color='#F3E600'
+          >
+            Full Stack Software Development Diploma with the Code Institute{' '}
+          </RoughNotation>
+        </span>{' '}
+        (Accredited by Edinburgh Napier University)
         <br />
         <br />
-        Currently open to full time, part time and freelance work.
+        Currently open to{' '}
+        <span className='white'>
+          <RoughNotation
+            type='highlight'
+            show={true}
+            padding={15}
+            color='#ff003c'
+          >
+            full time, part time and freelance{' '}
+          </RoughNotation>{' '}
+        </span>
+        work.
       </p>
     </div>
   );
