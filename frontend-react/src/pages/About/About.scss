@@ -4,5 +4,8 @@
 }
 
 .about-section {
-  background: url(../../assets/test.png) no-repeat cover;
+  // background: url(../../assets/test.png) no-repeat cover;
+  background-color: var(--cyan-color);
+  color: #2b3052;
+  font-weight: 700;
 }
