@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 import { urlFor, client } from '../../client';
 import './Projects.scss';
@@ -39,12 +40,14 @@ const Projects = () => {
 
   return (
     <div className='app-container app-flex projects-section'>
-      <h2 className='head-text'>
-        My <span>Portfolio</span>
-      </h2>
+      <RoughNotation type='highlight' show={true} color='black' padding={15}>
+        <h2 className='head-text white'>
+          Recent <span className='cyan'>Projects</span> <br />
+        </h2>
+      </RoughNotation>
 
       <div className='app-project-filter'>
-        {['Website', 'UI/UX', 'Small Project', 'All'].map((item, i) => (
+        {['Website', 'Small Project', 'All'].map((item, i) => (
           <div
             key={i}
             onClick={() => handleprojectFilter(item)}
@@ -112,9 +115,23 @@ const Projects = () => {
           </div>
         ))}
       </motion.div>
-      <div className='div'>
-        <button>GithuB</button>
-      </div>
+      <button>
+        <a
+          href='https://github.com/birrellc'
+          target='_blank'
+          rel='noreferrer'
+          class='white uppercase'
+        >
+          <motion.div
+            whileInView={{ scale: [0, 1] }}
+            whileHover={{ scale: [1, 0.8] }}
+            transition={{ duration: 0.3 }}
+            className='app-flex'
+          >
+            More Projects Here!
+          </motion.div>
+        </a>
+      </button>
     </div>
   );
 };
