@@ -120,7 +120,7 @@ const Projects = () => {
           href='https://github.com/birrellc'
           target='_blank'
           rel='noreferrer'
-          class='white uppercase'
+          className='white uppercase'
         >
           <motion.div
             whileInView={{ scale: [0, 1] }}
