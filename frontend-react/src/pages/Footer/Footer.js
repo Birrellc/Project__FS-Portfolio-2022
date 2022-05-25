@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { images } from '../../exports';
 import { client } from '../../client';
 import './Footer.scss';
+import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -41,7 +42,11 @@ const Footer = () => {
 
   return (
     <div className='app-container padding app-flex'>
-      <h2 className='head-text'>Contact Me</h2>
+      <RoughNotation type='highlight' show={true} color='white' padding={15}>
+        <h2 className='head-text black'>
+          Contact <span className='red'>Me</span>
+        </h2>
+      </RoughNotation>
 
       <div className='app-footer-cards'>
         <div className='app-footer-card '>
