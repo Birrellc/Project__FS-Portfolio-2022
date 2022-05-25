@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../exports';
 import './Hero.scss';
+import { useMediaQuery } from 'react-responsive';
 
 const scaleVariants = {
   whileInView: {
@@ -17,6 +18,8 @@ const scaleVariants = {
 };
 
 const Hero = () => {
+  const isDesktop = useMediaQuery({ query: `(min-width: 1200px)` });
+
   return (
     <div className='app-hero app-flex'>
       <motion.div
@@ -48,21 +51,25 @@ const Hero = () => {
         <img src={images.hero} alt='profile_bg' />
       </motion.div>
 
-      <motion.div
-        variants={scaleVariants}
-        whileInView={scaleVariants.whileInView}
-        className='app-hero-paint'
-      >
-        <div className='app-flex'>
-          <p className='shadow'>CONTACT</p>
-        </div>
-        <div className='app-flex'>
-          <p className='shadow big-text'>PROJECTS</p>
-        </div>
-        <div className='app-flex'>
-          <p className='shadow'>SKILLS</p>
-        </div>
-      </motion.div>
+      {isDesktop ? (
+        <motion.div
+          variants={scaleVariants}
+          whileInView={scaleVariants.whileInView}
+          className='app-hero-paint'
+        >
+          <div className='app-flex'>
+            <p className='shadow'>CONTACT</p>
+          </div>
+          <div className='app-flex'>
+            <p className='shadow big-text'>PROJECTS</p>
+          </div>
+          <div className='app-flex'>
+            <p className='shadow'>SKILLS</p>
+          </div>
+        </motion.div>
+      ) : (
+        ''
+      )}
     </div>
   );
 };
