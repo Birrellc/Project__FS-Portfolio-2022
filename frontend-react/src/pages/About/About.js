@@ -39,7 +39,8 @@ const About = () => {
         <p className='about-text'>
           <RoughNotation type='highlight' show={true} color='#F3E600'>
             Junior Developer
-          </RoughNotation>
+          </RoughNotation>{' '}
+          {''}
           based in England. I have a strong interest in the{' '}
           <span className='white'>
             <RoughNotation type='highlight' show={true} color='#ff003c'>
@@ -53,13 +54,13 @@ const About = () => {
           Recent graduate of the{' '}
           <span className='black'>
             <RoughNotation type='highlight' show={true} color='#F3E600'>
-              Full Stack Software Development Diploma with the Code Institute{' '}
+              Full Stack Software Development Diploma with the Code Institute
             </RoughNotation>
           </span>{' '}
           (Accredited by Edinburgh Napier University)
           <br />
           <br />
-          Currently open to
+          Currently open to {''}
           <span className='white'>
             <RoughNotation type='highlight' show={true} color='#ff003c'>
               full time, part time and freelance{' '}
