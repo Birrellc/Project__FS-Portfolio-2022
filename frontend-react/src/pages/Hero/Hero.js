@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { images } from '../../exports';
 import './Hero.scss';
 import { useMediaQuery } from 'react-responsive';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const scaleVariants = {
   whileInView: {
@@ -21,7 +22,7 @@ const Hero = () => {
   const isDesktop = useMediaQuery({ query: `(min-width: 1200px)` });
 
   return (
-    <div className='app-hero app-flex'>
+    <div id='home' className='app-hero app-flex'>
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ delay: 2, duration: 0.5 }}
@@ -57,15 +58,21 @@ const Hero = () => {
           className='app-hero-paint'
         >
           <div className='app-flex '>
-            <p>CONTACT</p>
+            <Link to='contact' smooth={true}>
+              <p className='text-margin'>CONTACT</p>
+            </Link>
           </div>
           <div className='app-flex'>
-            <p className='big-text text-margin'>PROJECTS</p>
+            <Link to='projects' smooth={true}>
+              <p className='big-text text-margin'>PROJECTS</p>
+            </Link>
           </div>
           <div className='app-flex'>
-            <p className='text-margin' color='grey'>
-              SKILLS
-            </p>
+            <Link to='skills' smooth={true}>
+              <p className='text-margin' color='grey'>
+                SKILLS
+              </p>
+            </Link>
           </div>
         </motion.div>
       ) : (

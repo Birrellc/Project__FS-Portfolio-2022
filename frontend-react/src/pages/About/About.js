@@ -26,7 +26,7 @@ const About = () => {
   // }, []);
 
   return (
-    <div className='app-container about-section'>
+    <div id='about' className='app-container about-section'>
       <RoughNotation type='highlight' show={true} color='white' padding={15}>
         <RoughNotation type='red' color={'white'} show={true}>
           <h2 className='head-text black'>

@@ -39,7 +39,7 @@ const Projects = () => {
   };
 
   return (
-    <div className='app-container app-flex projects-section'>
+    <div id='projects' className='app-container app-flex projects-section'>
       <RoughNotation type='highlight' show={true} color='black' padding={15}>
         <h2 className='head-text white'>
           Recent <span className='cyan'>Projects</span> <br />
@@ -47,7 +47,7 @@ const Projects = () => {
       </RoughNotation>
 
       <div className='app-project-filter'>
-        {['Website', 'Small Project', 'All'].map((item, i) => (
+        {['Website', 'All'].map((item, i) => (
           <div
             key={i}
             onClick={() => handleprojectFilter(item)}

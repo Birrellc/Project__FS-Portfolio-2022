@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 import './Navbar.scss';
 
@@ -10,9 +11,11 @@ const Navbar = () => {
   return (
     <nav className='app-navbar'>
       <div className='app-navbar-logo'>
-        <h2>
-          CHRIS<span>.</span>
-        </h2>
+        <Link to='home' smooth={true}>
+          <h2>
+            CHRIS<span>.</span>
+          </h2>
+        </Link>
       </div>
 
       <div className='app-navbar-menu'>
@@ -25,13 +28,20 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
-                <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </a>
-                </li>
-              ))}
+              {['home', 'about', 'projects', 'skills', 'contact'].map(
+                (item) => (
+                  <Link smooth={true} to={item} duration={500}>
+                    <li key={item}>
+                      <a
+                        style={{ cursor: 'pointer' }}
+                        onClick={() => setToggle(false)}
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  </Link>
+                )
+              )}
             </ul>
           </motion.div>
         )}

@@ -23,7 +23,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className='app-container skills-section '>
+    <div id='skills' className='app-container skills-section '>
       <RoughNotation type='highlight' show={true} color='black' padding={15}>
         <h2 className='head-text white'>
           Skills & <span className='yellow'>Experiences</span>
