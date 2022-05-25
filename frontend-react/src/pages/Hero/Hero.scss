@@ -48,8 +48,9 @@
 .big-text {
   font-size: 1.3rem;
 }
-.shadow {
-  text-shadow: 1px 1px #010101;
+
+.text-margin {
+  margin-top: 10%;
 }
 
 .app-hero-text {
@@ -79,20 +80,19 @@
   div {
     width: 100px;
     height: 100px;
-    color: white;
   }
 
   p {
     position: relative;
     top: -10%;
     left: -5%;
-    color: #fff;
+    color: var(--black-color);
     cursor: pointer;
     font-weight: 500;
   }
 
   p:hover {
-    color: #010101;
+    color: var(--white-color);
   }
 
   // links alt height/width

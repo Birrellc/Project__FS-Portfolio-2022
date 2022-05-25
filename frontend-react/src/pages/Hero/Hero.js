@@ -32,8 +32,7 @@ const Hero = () => {
             <div>
               <p className='p-text'>Chris</p>
               <h1 className='head-text'>
-                <span className='cyan'>F</span>RONTEN
-                <span className='red'>D</span> <span>D</span>EVELOPE
+                <span className='cyan'>F</span>RONTEND DEVELOPE
                 <span className='red'>R</span>
               </h1>
               <p className='p-text'>Web Developer</p>
@@ -57,14 +56,16 @@ const Hero = () => {
           whileInView={scaleVariants.whileInView}
           className='app-hero-paint'
         >
-          <div className='app-flex'>
-            <p className='shadow'>CONTACT</p>
+          <div className='app-flex '>
+            <p>CONTACT</p>
           </div>
           <div className='app-flex'>
-            <p className='shadow big-text'>PROJECTS</p>
+            <p className='big-text text-margin'>PROJECTS</p>
           </div>
           <div className='app-flex'>
-            <p className='shadow'>SKILLS</p>
+            <p className='text-margin' color='grey'>
+              SKILLS
+            </p>
           </div>
         </motion.div>
       ) : (
