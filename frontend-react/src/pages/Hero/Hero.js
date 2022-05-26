@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { images } from '../../exports';
 import './Hero.scss';
+import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import { useMediaQuery } from 'react-responsive';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
@@ -38,6 +39,26 @@ const Hero = () => {
               </h1>
               <p className='p-text'>Web Developer</p>
               <p className='p-text'>Junior</p>
+              <Link>
+                <a
+                  className='socials'
+                  href='https://github.com/Birrellc'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <AiFillGithub />
+                </a>
+              </Link>
+              <Link>
+                <a
+                  className='socials'
+                  href='https://www.linkedin.com/in/chrisbirrell17/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <AiFillLinkedin />
+                </a>
+              </Link>
             </div>
           </div>
         </div>

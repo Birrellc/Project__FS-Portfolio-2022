@@ -142,3 +142,16 @@
     object-fit: contain;
   }
 }
+
+.socials {
+  display: flex;
+  margin-top: 1rem;
+  text-decoration: none !important;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--white-color);
+
+  &:hover {
+    color: var(--cyan-color);
+  }
+}
