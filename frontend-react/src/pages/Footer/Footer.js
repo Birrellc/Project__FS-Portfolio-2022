@@ -41,7 +41,7 @@ const Footer = () => {
   };
 
   return (
-    <div id='contact' className='app-container padding app-flex'>
+    <div id='contact' className='app-container footer-section app-flex'>
       <RoughNotation type='highlight' show={true} color='white' padding={15}>
         <h2 className='head-text black'>
           Contact <span className='red'>Me</span>
