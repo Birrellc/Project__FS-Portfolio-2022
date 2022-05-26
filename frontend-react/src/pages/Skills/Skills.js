@@ -20,7 +20,7 @@ const Skills = () => {
     <div id='skills' className='app-container skills-section '>
       <RoughNotation type='highlight' show={true} color='black' padding={15}>
         <h2 className='head-text white'>
-          My & <span className='yellow'>Skills</span>
+          My <span className='yellow'>Skills</span>
         </h2>
       </RoughNotation>
 
