@@ -5,7 +5,10 @@
   align-items: center;
   padding: 1rem 2rem;
   position: fixed;
-  z-index: 2;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 
   h2 {
     color: var(--white-color);
