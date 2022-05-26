@@ -6,16 +6,10 @@ import { urlFor, client } from '../../client';
 import './Skills.scss';
 
 const Skills = () => {
-  const [experiences, setExperiences] = useState([]);
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "experiences"]';
     const skillsQuery = '*[_type == "skills"]';
-
-    client.fetch(query).then((data) => {
-      setExperiences(data);
-    });
 
     client.fetch(skillsQuery).then((data) => {
       setSkills(data);
@@ -26,7 +20,7 @@ const Skills = () => {
     <div id='skills' className='app-container skills-section '>
       <RoughNotation type='highlight' show={true} color='black' padding={15}>
         <h2 className='head-text white'>
-          Skills & <span className='yellow'>Experiences</span>
+          My & <span className='yellow'>Skills</span>
         </h2>
       </RoughNotation>
 
