@@ -13,7 +13,7 @@
     padding-top: 8rem;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1200px) {
     flex-direction: column;
   }
 
@@ -33,17 +33,8 @@
   margin: 0 2rem;
 
   @media screen and (max-width: 1200px) {
-    width: 100%;
     margin-right: 0rem;
   }
-}
-
-.big-text {
-  font-size: 1.3rem;
-}
-
-.text-margin {
-  margin-bottom: 10%;
 }
 
 .app-hero-text {
@@ -58,6 +49,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 20%;
   }
 }
 
@@ -148,10 +140,5 @@
   img {
     width: 100%;
     object-fit: contain;
-    z-index: 1;
-  }
-
-  @media screen and (max-width: 1200px) {
-    margin: 2rem 2rem;
   }
 }
