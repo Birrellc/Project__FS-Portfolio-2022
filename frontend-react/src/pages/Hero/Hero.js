@@ -39,26 +39,24 @@ const Hero = () => {
               </h1>
               <p className='p-text'>Web Developer</p>
               <p className='p-text'>Junior</p>
-              <Link>
+              <li className='socials'>
                 <a
-                  className='socials'
-                  href='https://github.com/Birrellc'
+                  href={'https://github.com/Birrellc'}
                   target='_blank'
                   rel='noreferrer'
                 >
                   <AiFillGithub />
                 </a>
-              </Link>
-              <Link>
+              </li>
+              <li className='socials'>
                 <a
-                  className='socials'
-                  href='https://www.linkedin.com/in/chrisbirrell17/'
+                  href={'https://www.linkedin.com/in/chrisbirrell17/'}
                   target='_blank'
                   rel='noreferrer'
                 >
                   <AiFillLinkedin />
                 </a>
-              </Link>
+              </li>
             </div>
           </div>
         </div>

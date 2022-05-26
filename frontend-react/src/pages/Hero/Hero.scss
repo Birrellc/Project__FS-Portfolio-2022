@@ -145,13 +145,17 @@
 
 .socials {
   display: flex;
-  margin-top: 1rem;
-  text-decoration: none !important;
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--white-color);
 
-  &:hover {
-    color: var(--cyan-color);
+  a {
+    display: flex;
+    color: var(--white-color);
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--cyan-color);
+    }
   }
 }
