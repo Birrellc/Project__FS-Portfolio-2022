@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 import { motion } from 'framer-motion';
-import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
+import { RoughNotation } from 'react-rough-notation';
 
 import { urlFor, client } from '../../client';
 import './Projects.scss';

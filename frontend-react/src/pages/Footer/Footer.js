@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { images } from '../../exports';
 import { client } from '../../client';
 import './Footer.scss';
-import { RoughNotation, RoughNotationGroup } from 'react-rough-notation';
+import { RoughNotation } from 'react-rough-notation';
 
 const Footer = () => {
   const [formData, setFormData] = useState({
