@@ -4,6 +4,8 @@ _Known Bugs: Issue with Rough Notation lib not always loading the effects in the
 
 _Google Page Site doesnt work use [LIVE SITE](https://chris-birrell.tech) or the link in the project description to the top left of the page._
 
+Todo: _add form validation_
+
 ---
 
 ## Description
