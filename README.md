@@ -1,4 +1,4 @@
-# Chris Birrell Full Stack Portfolio 2022
+# Full Stack Portfolio 2022
 
 _Known Bugs: Issue with Rough Notation lib not always loading the effects in the correct place on the page or after the contact form is submitted._
 
@@ -292,7 +292,7 @@ Backend - admin will be able to use the backend to change projects and skills da
 
 ## Testing
 
-Testing has is logged in its own document - not finished yet
+Testing has is logged in its own document - [HERE](https://github.com/Birrellc/Project__FS-Portfolio-2022/blob/main/testing/testing.md)
 
 ---
 
